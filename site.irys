@@ -1,0 +1,121 @@
+# site.irys
+ajuda
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ajude a Irys a Realizar Seu Sonho das Lives</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #fff0f6; /* rosa bem claro */
+            margin: 0;
+            padding: 20px;
+            color: #6b3a58; /* rosa escuro para texto */
+            text-align: center;
+        }
+        header {
+            background-color: #f7d9e3; /* rosa suave */
+            color: #6b3a58;
+            padding: 25px 0;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(219, 112, 147, 0.3);
+        }
+        h1 {
+            margin: 0;
+            font-weight: 600;
+            font-size: 2.2em;
+        }
+        .content {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 25px 30px;
+            border-radius: 15px;
+            box-shadow: 0 3px 12px rgba(219, 112, 147, 0.25);
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.5;
+            margin: 15px 0;
+        }
+        .donate {
+            margin-top: 35px;
+        }
+        .donate p {
+            font-weight: 600;
+            font-size: 1.2em;
+            color: #c75a7c;
+        }
+        .pix-code {
+            margin: 20px auto;
+            max-width: 480px;
+            background: #fde8ef;
+            padding: 18px 15px;
+            font-weight: 600;
+            font-size: 1em;
+            color: #a93d62;
+            border-radius: 8px;
+            user-select: all;
+            word-break: break-word;
+            box-shadow: 0 2px 6px rgba(219, 112, 147, 0.2);
+        }
+        button {
+            background-color: #c75a7c;
+            color: white;
+            border: none;
+            padding: 14px 32px;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+            box-shadow: 0 3px 7px rgba(199, 90, 124, 0.6);
+        }
+        button:hover {
+            background-color: #a13e5d;
+        }
+        footer {
+            margin-top: 45px;
+            font-size: 0.9em;
+            color: #a66b87;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ajude a Irys a Realizar Seu Sonho das Lives</h1>
+    </header>
+
+    <div class="content">
+        <p>Oi! Eu sou a <strong>Irys</strong>, tenho 17 anos e sonho em fazer lives para compartilhar momentos especiais com vocês.</p>
+
+        <p>Para começar, preciso de uma placa de vídeo que custa <strong>R$ 1500</strong>. Estou arrecadando doações para realizar esse sonho!</p>
+
+        <p>Se puder ajudar, sua contribuição fará toda a diferença. Muito obrigada! 💖</p>
+
+        <div class="donate">
+            <p>Faça sua doação via PIX:</p>
+            <div class="pix-code">00020101021126580014br.gov.bcb.pix01363fe9d501-b3eb-4280-8320-f1f7f22a1c375204000053039865802BR5918IRYS A DA C SANTOS6013NOSSA SENHORA62070503***6304EE03</div>
+            <button onclick="copyPix()">Copiar código PIX</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Obrigada pelo seu apoio e por acreditar no meu sonho! 💕</p>
+    </footer>
+
+    <script>
+        function copyPix() {
+            const pix = document.querySelector('.pix-code').textContent;
+            navigator.clipboard.writeText(pix).then(() => {
+                alert('Código PIX copiado para a área de transferência!');
+            });
+        }
+    </script>
+</body>
+</html>
